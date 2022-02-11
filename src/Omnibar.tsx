@@ -131,7 +131,7 @@ export default class Omnibar<T> extends React.PureComponent<
 
   handleFocus = (evt: React.FocusEvent<HTMLInputElement>) => {
     if (this.state.results.length === 0 && this.props.showEmpty) {
-      this.query("");
+      this.query('');
     }
     if (this.props.onFocus) {
       this.props.onFocus(evt);
